@@ -1,7 +1,7 @@
 @import '~antd/dist/antd.css';
 
 .App {
-	background: rgba(16, 30, 48, 0.9);
+	background: rgba(16, 30, 48, 1);
 	color: #9bb5cc;
 }
 
@@ -12,15 +12,8 @@ table{
 	border-collapse: collapse;
     text-align: left;
 }
-
-.ant-table-scroll{
-	overflow: auto;
-    overflow-x: hidden;
-}
-
 .ant-table-header{
-    background: none;
-    overflow: auto;
+    background: transparent;
 }
 
 .ant-table-tbody > tr > td{
@@ -28,18 +21,17 @@ table{
 }
 
 .ant-table-fixed-header > .ant-table-content > .ant-table-scroll > .ant-table-body{
-	background: none;
-    margin-top: 17px;
+	background: rgba(16, 30, 48, 1);
 	color: #9bb5cc;
 }
 
-.ant-table-body::-webkit-scrollbar{	
+.ant-table-body::-webkit-scrollbar{
 	width: 8px;
-    height: 8px;
+  height: 8px;
 }
 .ant-table-body::-webkit-scrollbar-thumb{
 	background: #273754;
-    border-radius: 6px;
+  border-radius: 6px;
 }
 .ant-table-body::-webkit-scrollbar-track{
 	background: #273754;
@@ -52,7 +44,6 @@ table{
 }
 
 .ant-table-thead > tr > th{
-	background: none;
+	background: transparent;
 	color: #9bb5cc;
-	border: none;
 }
